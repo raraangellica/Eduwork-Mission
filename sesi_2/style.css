@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Agar ukuran tetap presisi */
+  box-sizing: border-box;
 }
 
 body {
@@ -9,6 +9,9 @@ body {
   color: #000000;
   font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
   font-size: 14px;
+  a:hover {
+    color: #00b6df;
+  }
 }
 
 header {
@@ -23,7 +26,7 @@ header {
   nav {
     ul {
       display: flex;
-      gap: 2px;
+      gap: 10px;
       li {
         list-style-type: none;
         cursor: pointer;
@@ -49,10 +52,8 @@ button {
   cursor: pointer;
 }
 
-/* Container Utama */
 .profile-container {
   display: grid;
-  /* Default: 2 Kolom untuk Desktop */
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 20px;
