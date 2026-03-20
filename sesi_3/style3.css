@@ -1,0 +1,58 @@
+:root {
+  --bs-body-font-family:
+    "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+
+  --bs-body-font-size: 0.875rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bs-body-font-family);
+}
+
+header {
+  background: linear-gradient(to right, #0052d4, #4364f7, #0751a5);
+}
+
+footer {
+  background: linear-gradient(to right, #0052d4, #4364f7, #0751a5);
+}
+
+.row-warna > div {
+  background-color: #8fdafa;
+}
+
+.i-color {
+  width: 24px;
+  height: 24px;
+  color: #ffd700;
+}
+
+.box {
+  width: 300px;
+}
+
+a:hover {
+  background-color: #ef2525;
+}
+
+.hv-zoom {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hv-zoom:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: relative;
+}
+
+.image-wrapper {
+  overflow: hidden;
+  border-radius: 8px;
+}
