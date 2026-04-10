@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style3.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header
+      class="d-flex justify-content-between align-items-center text-white ps-3"
+    >
+      <div class="logo">MY PORTOFOLIO</div>
+      <div class="dropdown d-block d-md-none">
+        <button class="btn btn-primary" type="button" data-bs-toggle="dropdown">
+          <i data-feather="align-justify"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="#home">HOME</a></li>
+          <li><a class="dropdown-item" href="#about-me">ABOUT ME</a></li>
+          <li><a class="dropdown-item" href="#portofolio">PORTOFOLIO</a></li>
+        </ul>
+      </div>
+
+      <nav class="d-none d-md-block">
+        <ul class="nav">
+          <li><a class="nav-link text-white" href="#home">HOME</a></li>
+          <li><a class="nav-link text-white" href="#about-me">ABOUT ME</a></li>
+          <li>
+            <a class="nav-link text-white" href="#portofolio">PORTOFOLIO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="row">
+          <div class="col-md col-lg row align-items-center">
+            <div class="">
+              <h1>Professional Profile</h1>
+              <p>
+                Focused on code quality and structural integrity, I am a
+                developer committed to writing clean and meaningful code.
+              </p>
+
+              <div class="text-end text-md-center">
+                <button data-bs-toggle="modal" data-bs-target="#modal-info">
+                  View More Info
+                </button>
+              </div>
+              <div
+                class="modal fade"
+                id="modal-info"
+                tabindex="-1"
+                aria-labelledby="labelModal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="labelModal">Judul Modal</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+
+                    <div class="modal-body">
+                      Hello, you can find my information below! i have projects
+                      and experience in web development.
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md col-lg me-0">
+            <img
+              src="/sesi_2/image/mypic.jpeg"
+              alt="Profile"
+              class="img-fluid"
+            />
+            <p class="text-center">Profile Picture</p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <div id="about-me" class="container">
+        <div class="row text-center gap-2">
+          <h2>About Me</h2>
+          <p>Let's get to know each other better</p>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center text-primary"
+        >
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center"
+          >
+            <i data-feather="user" class="i-color m-3"></i>
+            <div class="text-start box">
+              <strong class="fw-bold mb-0">Full Name</strong>
+              <p class="mb-0">Rara Angellica Stefani Putri</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center"
+          >
+            <i data-feather="book-open" class="i-color m-3"></i>
+            <div class="text-start box">
+              <strong>Education</strong>
+              <p class="mb-0">High School Graduate, Science Major</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center"
+          >
+            <i data-feather="briefcase" class="i-color m-3"></i>
+            <div class="text-start box">
+              <strong>Profession</strong>
+              <p class="mb-0">Freelancer</p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center"
+          >
+            <i data-feather="mail" class="i-color m-3"></i>
+            <div class="text-start box">
+              <strong class="fw-bold mb-0">Email</strong>
+              <p class="mb-0">raraangellica@gmail.com</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center"
+          >
+            <i data-feather="zap" class="i-color m-3"></i>
+            <div class="text-start box">
+              <strong>Skill</strong>
+              <p class="mb-0">HTML5, CSS, JavaScript, React, PHP, Laravel</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 d-flex justify-content-center align-items-center"
+          >
+            <i data-feather="home" class="i-color m-3"></i>
+            <div class="text-start box">
+              <strong>Address</strong>
+              <p class="mb-0">Cilacap</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <hr />
+      <br />
+      <section id="portofolio" class="container py-5">
+        <h2 class="title-porto text-center mb-5 fw-bold">Portofolio</h2>
+
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide carousel-dark slide"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/sesi_1/image/E-library.jpg"
+                class="d-block w-100 img-fluid"
+                alt="Proyek 1"
+              />
+              <div class="carousel-caption d-none d-md-block bg-light rounded">
+                <h5 class="text-warning">First slide label</h5>
+                <p class="text-primary">
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/sesi_1/image/Sistem Inventory.jpg"
+                alt="Proyek 2"
+                class="d-block w-100 img-fluid"
+              />
+              <div class="carousel-caption d-none d-md-block bg-light rounded">
+                <h5 class="text-warning">Second slide label</h5>
+                <p class="text-primary">
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/sesi_1/image/company profile.jpg"
+                alt="Proyek 3"
+                class="d-block w-100 img-fluid"
+              />
+              <div class="carousel-caption d-none d-md-block bg-light rounded">
+                <h5 class="text-warning">Third slide label</h5>
+                <p class="text-primary">
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <br />
+    <footer
+      class="align-items-center text-white text-start text-md-center py-1 px-1"
+    >
+      <p>
+        &copy; 2026 Portofolio Semantic HTML By Rara Angellica Stefani Putri
+      </p>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
