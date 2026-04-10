@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZORO CAFE</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://media.istockphoto.com/id/1509017618/id/vektor/biji-kopi-ikon-vektor.jpg?s=612x612&w=0&k=20&c=CvcrOci25uttqUIJcChpDe7xl02PC9y74REymBxWJ6Q="
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-danger">
+    <div class="container py-5">
+      <h2 class="mb-4 text-center text-warning">MENU CAFE ZORO</h2>
+
+      <div class="row g-3 mb-4">
+        <div class="col-md-4">
+          <input
+            type="text"
+            id="searchInput"
+            class="form-control"
+            placeholder="Cari nama produk..."
+          />
+        </div>
+        <div class="col-md-3">
+          <select id="categoryFilter" class="form-select">
+            <option value="All">Semua Kategori</option>
+            <option value="Makanan">Makanan</option>
+            <option value="Minuman">Minuman</option>
+            <option value="Snack">Snack</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <select id="priceSort" class="form-select">
+            <option value="default">Urutkan Harga</option>
+            <option value="low">Terendah ke Tertinggi</option>
+            <option value="high">Tertinggi ke Terendah</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4" id="productContainer"></div>
+    </div>
+
+    <script src="https://jsdelivr.net"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
